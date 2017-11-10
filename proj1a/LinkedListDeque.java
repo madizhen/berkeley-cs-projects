@@ -2,11 +2,11 @@ public class LinkedListDeque<Item> {
 	
 	public class Node {
 		
-		public Item item;
 		public Node prev;
+		public Item item;
 		public Node next;
 
-		public Node(Item i, Node p, Node n) {
+		public Node(Node p, Item i, Node n) {
 			item = i;
 			prev = p;
 			next = n;
@@ -18,10 +18,10 @@ public class LinkedListDeque<Item> {
 
 	public LinkedListDeque() {
 		size = 0;
-		sentinel = new Node(null, sentinel, sentinel);
+		sentinel = new Node(sentinel, null, sentinel);
 	}
 
-	public boolean Empty() {
+	public boolean isEmpty() {
 		if (size == 0) {
 			return true;
 		}
@@ -31,14 +31,15 @@ public class LinkedListDeque<Item> {
 
 	public void addFirst(Item x) {
 		Node newFirstNode;
-		if (Empty()) {
-			newFirstNode = new Node(x, sentinel, sentinel);
-		}
+		if (isEmpty()) {
+			newFirstNode = new Node(sentinel, x, sentinel);
+			sentinel.prev = newFirstNode;
+		} 
 		else {
-			Node originalNode = new Node(i, sentinel, sentinel);
-			newFirstNode = Node(newFirstNode, i, prev);
-			size += 1;
+			Node originalNode = sentinel.next;
+			newFirstNode = new Node(sentinel, x, sentinel);
 		}
+		size += 1;
 	}
 
 	public void addLast(Item i) {
@@ -47,7 +48,7 @@ public class LinkedListDeque<Item> {
 
 	
 	public int size() {
-		return this.size;
+		return size;
 	}
 
 
