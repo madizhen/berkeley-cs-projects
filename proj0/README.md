@@ -26,26 +26,26 @@ Acceleration: *Newton's Second Law of Motion* establishes that the accerations i
 - ay = Fy / m
 
 #### `calcDistance` Method
-Function: Calculates the distance bertween two planets
-Arguments: Planet
-Returns: double
+Function: Calculates the distance bertween two planets <br/>
+Arguments: Planet <br/>
+Returns: double <br/>
 In order to do this, one would find `dx` and `dy`, then use the coordinate distance formula to find the length between two points.
 
 #### `calcForceExertedBy` Method
-Function: Calculates the Pairwise Force, as described above
-Arguments: Planet
-Returns: double
+Function: Calculates the Pairwise Force, as described above<br/>
+Arguments: Planet <br/>
+Returns: double <br/>
 In order to do this, the various equations associated with Pairwise Force ought to be calculated.
 
 #### `calcNetForce` Method
-Function: Update the Planet's net force to match the total amount of force exerted by those planets on the current planet
-Arguments: Array of Planet objects
-Returns: double
+Function: Update the Planet's net force to match the total amount of force exerted by those planets on the current planet <br/>
+Arguments: Array of Planet objects <br/>
+Returns: double <br/>
 In order to do this, iterarte over the array
 
 #### `draw` Method
-Function: Draw the planet to the (x, y) coordiantes
-Arguments: none
-This uses StdDraw API from the Princeston Standard Library.
+Function: Draw the planet to the (x, y) coordiantes. <br/>
+Arguments: none <br/>
+This uses StdDraw API from the Princeston Standard Library. <br/>
 
 [More on testing, running the simulator, printing the universe later - sorry]
