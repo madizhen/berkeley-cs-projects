@@ -48,4 +48,13 @@ Function: Draw the planet to the (x, y) coordiantes. <br/>
 Arguments: none <br/>
 This uses StdDraw API from the Princeston Standard Library. <br/>
 
-[More on testing, running the simulator, printing the universe later - sorry]
+### `NBody` Class
+The `NBody` runs the simulation and create a universe from the data. It also has a lot of testing invovled in it.
+
+###### Testing
+Testing is important because it allows us to check parts of the program for individual functionality. It's particuarily useful in these mutli-facted programs that rely on all the moving parts. Though this program has a lot of scaffolding and allows you to write the program ased off the tests, the opporite can also be done. Meaning, you can also write a test of output expectations against your program to see if your code is working. This is a form of error handling.
+
+#### Running & Drawing the Simulation
+This part has more complicated scaffolding that I'm not fully comfortable putting into my own words because there's some parts (drawing, background, animation creation) that are just more lengthy and complicated than for me to explain sensibly & concisely. I'll try later on when I have a better grasp of it.
+
+*To run animation, compile `NBody.java` and run `java NBody 157788000.0 25000.0 data/planets.txt` in the terminal.
